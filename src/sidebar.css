@@ -1,0 +1,150 @@
+.App-Icon {
+	max-height: 70%;
+	aspect-ratio: 1;
+	object-fit: contain;
+  }
+  
+  .app-info {
+	background-color: transparent;
+	width: 100%;
+	height: 15vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	color: var(--foreground-primary) !important;
+	font-size: 1.2em;
+	margin-bottom: 25px;
+	position: relative;
+	font-weight: 500;
+	text-align: left;
+	line-height: 1.2em;
+	box-sizing: content-box;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .app-info>img{
+	margin-bottom: 5px;
+  }
+.gen{
+	padding-left: 10%;
+	width: 100%;
+    height: 36px;
+    font-size: x-large;
+	text-align: start;
+	color: #6F7688;
+}
+.bottom{
+	width: 100%;
+	height: 40px;
+	font-size: larger;
+	display: flex;
+	flex-direction:row ;
+	justify-content: space-around;
+	margin-bottom: 25px;
+}
+.buttons{
+	width: 100%;
+	padding-left: 30%;
+	margin: 15px 0 40px 0;
+}
+button.nav-button {
+	font-size: 1.5em;
+	height: 7vh;
+	width: 95%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background: none;
+	border: none;
+	transition: all linear 0.1s;
+	border-radius: 10px !important;
+	color: #6F7688;
+	fill: var(--foreground-primary) !important;
+	font-family: 'Poppins' !important;
+	font-weight: 400 !important;
+}
+
+button.nav-button svg {
+	max-height: 30px;
+	max-width: 30px;
+	min-width: 30px;
+	margin-right: 10px;
+	padding: 2.5px;
+}
+button.nav-button svg  > * {
+	fill: var(--foreground-primary) ;	
+}
+
+button.nav-button:hover {
+	background: #84587C !important;
+	color: white!important;
+}
+
+button.nav-button.active {
+	background: #84587C !important;
+	fill: white !important;
+	color: white !important;
+}
+
+button.nav-button:hover svg > * {
+	fill: white !important;
+}
+
+button.nav-button.active svg > * {
+	fill: white!important;
+}
+
+button.nav-button.active .chevron{
+	display: block;
+}
+
+button.nav-button .chevron *{
+	fill: var(--background-secondary)  !important;
+}
+
+button.nav-button div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+button.nav-button .chevron {
+	height: 20px;
+	max-width: 20px;
+	display: none;
+	margin-right: 0px !important;
+}
+
+.horz_line{
+	height: 1px;
+	width: 184px;
+	background-color: #D9D9D9;
+	margin: 15px 0;
+	margin-left: -50px;
+}
+.myToggle{
+	display: flex;
+	align-items: center;
+	margin-left: -25%;
+	margin-top: 20px;
+}
+.myToggle span{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	line-height: 31px;
+	/* identical to box height, or 129% */
+	font-size: 20px;
+	text-transform: capitalize;
+	margin-right: 15px;
+	color: var(--foreground-primary);
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .nav-button{
+        font-size: 0.8em;
+    }
+}
