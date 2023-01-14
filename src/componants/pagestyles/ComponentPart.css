@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+.main{
+   
+padding: 5vh;
+  justify-content: left;
+    font-family: "Poppins";
+  }
+
+  .field{
+    
+    background-color: rgba(209, 224, 209, 0.705);
+    float: right;  
+    padding: 1vh;
+    width: 25vh;
+    margin-right: 5vh;
+    margin-top: 2vh;
+  }
+  
+.side-button{
+    border: none;
+    margin-top: 0%;
+    align-items: right;
+    width:12vh;
+    padding: 2vh 0.5vh;
+    background-color:  rgba(227, 238, 227, 0.705);
+    border-radius: 12px;
+    color: rgb(149, 149, 153);
+    height: max-content;
+  }
+
+  /* button.nav-button svg {
+    max-height: 30px;
+    max-width: 30px;
+    min-width: 30px;
+    margin-right: 10px;
+    padding: 2.5px;
+  } */
+
+  .side-button:hover {
+    background: #f1f1f1 !important;
+    color:blue!important;
+  }
+  
+  .side-button.active {
+    background: #ffffff !important;
+    fill: white !important;
+    color: blue!important;
+  }
+  
+
+  .details{
+    display: flex;
+    flex-direction: column;
+ 
+     
+    padding: 2vh;
+
+    width: max-content;
+  }
+  
+  .Score{
+    margin-left: 10vh;
+    width: max-content;
+  
+   margin-top: 0vh;
+   padding: 2vh;
+   text-align: left;
+   margin-right: 20vh;
+  }
+
+  hr.net{
+    width: 500%;
+  }
+
+  sup{
+  color: #6b6464b4;
+  padding: 0.2vh;
+
+}
+
+
+.net{
+  padding: 2vh;
+  margin-top: 0vh;
+  text-align: left;
+  margin-right: 20vh;
+
+}
+  .overview{
+  display: flex;
+  flex-direction: row;
+}
