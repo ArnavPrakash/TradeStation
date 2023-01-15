@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Graph from './componants/graph.jsx';
 import Routed from './Router';
 import { useEffect, useState } from 'react';
+import ComponentPart from '../src/componants/ComponentPart'
 import Areagraph from './componants/Areagraph';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/" element={<Navigate exact to="/Homepage" />} />
 				<Route exact path="/Homepage" element={<Routed/>} >
 					<Route path="/Homepage/graph" element={<Graph/>} />
+					<Route path="/Homepage/stocks" element={<ComponentPart/>} />
 			  </Route>
         </Routes>
 			</BrowserRouter>
