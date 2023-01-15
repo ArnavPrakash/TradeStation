@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import Chart from 'react-apexcharts'
 import * as ReactDOM from "react-dom";
-
+import './css/graph.css'
 
 
 function Graph() {
@@ -273,8 +273,25 @@ function Graph() {
       };
       
     return (
-        <div style={{'width':'100%','height':'100%','display':'flex','justifyContent':'center','alignContent':'center'}}>
-        <div style={{'border': '2px solid black','borderRadius':'20px', 'width':'60%','height':'60%'}}>
+        <div className='component'>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" /> Active
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option2" autocomplete="off"/> Radio
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option3" autocomplete="off"/> Reliance
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option4" autocomplete="off"/> Reliance
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option5" autocomplete="off"/> Reliance
+            </label>
+          </div>
+        <div className='graph'>
             <Chart options={chart.options} series={chart.series} type="candlestick" width="100%" />
         </div>
         </div>

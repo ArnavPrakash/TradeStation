@@ -1,13 +1,12 @@
 // // import PropTypes from 'prop-types';
 // import React, { Component } from 'react';
-// import Chart from 'react-apexcharts'
+// import Chart from 'react-apexcharts';
 // import * as ReactDOM from "react-dom";
 
 
 
 // function Areagraph() {
-//     const chart = {
-          
+//     const charts = {
 //         series: [{
 //           data: [
 //             [1327359600000,30.95],
@@ -356,14 +355,14 @@
       
 //       };
 
-//       updateData(timeline){
-//         chart.setState({
+//       updateData(timeline);{
+//         charts.setState({
 //           selection: timeline
 //         })
       
 //         switch (timeline) {
 //           case 'one_month':
-//             ApexCharts.exec(
+//             Chart.exec(
 //               'area-datetime',
 //               'zoomX',
 //               new Date('28 Jan 2013').getTime(),
@@ -371,7 +370,7 @@
 //             )
 //             break
 //           case 'six_months':
-//             ApexCharts.exec(
+//             Chart.exec(
 //               'area-datetime',
 //               'zoomX',
 //               new Date('27 Sep 2012').getTime(),
@@ -379,7 +378,7 @@
 //             )
 //             break
 //           case 'one_year':
-//             ApexCharts.exec(
+//             Chart.exec(
 //               'area-datetime',
 //               'zoomX',
 //               new Date('27 Feb 2012').getTime(),
@@ -387,7 +386,7 @@
 //             )
 //             break
 //           case 'ytd':
-//             ApexCharts.exec(
+//             Chart.exec(
 //               'area-datetime',
 //               'zoomX',
 //               new Date('01 Jan 2013').getTime(),
@@ -395,7 +394,7 @@
 //             )
 //             break
 //           case 'all':
-//             ApexCharts.exec(
+//             Chart.exec(
 //               'area-datetime',
 //               'zoomX',
 //               new Date('23 Jan 2012').getTime(),
@@ -410,39 +409,33 @@
 //         <div id="chart">
 //         <div class="toolbar">
 //           <button id="one_month"
-              
-//               onClick={()=>chart.updateData('one_month')} className={ (chart.state.selection==='one_month' ? 'active' : '')}>
+//               onClick={()=>updateData('one_month')} className={ (charts.state.selection==='one_month' ? 'active' : '')}>
 //             1M
 //           </button>
 //           &nbsp;
 //           <button id="six_months"
-              
-//               onClick={()=>chart.updateData('six_months')} className={ (chart.state.selection==='six_months' ? 'active' : '')}>
+//               onClick={()=>updateData('six_months')} className={ (charts.state.selection==='six_months' ? 'active' : '')}>
 //             6M
 //           </button>
 //           &nbsp;
 //           <button id="one_year"
-              
-              
-//               onClick={()=>chart.updateData('one_year')} className={ (chart.state.selection==='one_year' ? 'active' : '')}>
+//               onClick={()=>updateData('one_year')} className={ (charts.state.selection==='one_year' ? 'active' : '')}>
 //             1Y
 //           </button>
 //           &nbsp;
 //           <button id="ytd"
-              
-//               onClick={()=>chart.updateData('ytd')} className={ (chart.state.selection==='ytd' ? 'active' : '')}>
+//               onClick={()=>updateData('ytd')} className={ (charts.state.selection==='ytd' ? 'active' : '')}>
 //             YTD
 //           </button>
 //           &nbsp;
-//           <button id="all"
-              
-//               onClick={()=>chart.updateData('all')} className={ (chart.state.selection==='all' ? 'active' : '')}>
+//           <button id="all"  
+//               onClick={()=>updateData('all')} className={ (charts.state.selection==='all' ? 'active' : '')}>
 //             ALL
 //           </button>
 //         </div>
       
 //         <div id="chart-timeline">
-//         <Chart options={chart.state.options} series={chart.state.series} type="area" height={350} />
+//         <Chart options={charts.state.options} series={charts.state.series} type="area" height={350} />
 //       </div>
 //       </div>
 //     );
