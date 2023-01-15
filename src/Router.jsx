@@ -10,7 +10,7 @@ import {AiFillHome} from 'react-icons/ai';
 import {VscGraph} from 'react-icons/vsc';
 import {MdOutlineForum} from 'react-icons/md';
 import {TbMessages} from 'react-icons/tb';
-import ComponentPart from '../src/componants/ComponentPart'
+
 
 function Routed() {
     const location = useLocation();
@@ -52,21 +52,25 @@ function Routed() {
                             }} >
                                 <div><AiFillHome/> Home</div>
                             </button>
+                            <button className={window.location.pathname.startsWith("/Homepage/stocks") ? 'nav-button active' : 'nav-button'} onClick={() => {
+                                navigate("/Homepage/stocks")
+                            }}>
+                                <div><VscGraph/>Stocks & Funds</div>
+                            </button>
                             <button className={window.location.pathname.startsWith("/Homepage/graph") ? 'nav-button active' : 'nav-button'} onClick={() => {
                                 navigate("/Homepage/StocksFunds")
                             }}>
-                                <div><VscGraph/> Stocks & Funds</div>
-                            </button>
-                            <button className={window.location.pathname.startsWith("/session/issuemanagement") ? 'nav-button active' : 'nav-button'} onClick={() => {
-                                // navigate("/session/issuemanagement")
-                            }}>
-                                <div><TbMessages/>Forum</div>
+                                <div><VscGraph/>Advanced Chart</div>
                             </button>
                             </div>
                         </div>
                             <div className='bottom'>
-                                <div>Login</div>
-                                <div>Sign Up</div>
+                                <div className='hover' onClick={() => {
+                                navigate("/Homepage/login")
+                            }}>Login</div>
+                                <div className='hover' onClick={() => {
+                                navigate("/Homepage/signin")
+                            }}>Sign Up</div>
                             </div>
                     </div>
                     <div className="content">
