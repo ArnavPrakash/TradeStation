@@ -19,6 +19,7 @@ function App() {
         <Route exact path="/" element={<Navigate exact to="/login" />} />
 				<Route exact path="/login" element={<Routed/>} >
 					<Route path="login/graph" element={<Graph/>} />{" "}
+					
 			  </Route>
         </Routes>
 			</BrowserRouter>

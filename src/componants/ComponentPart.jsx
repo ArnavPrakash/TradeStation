@@ -2,7 +2,7 @@ import React from "react";
 import OverviewCard from "./OverviewCard";
 import "./pagestyles/ComponentPart.css";
 import {AiFillQuestionCircle} from 'react-icons/ai';
-
+import  {ReactComponent as layer1} from "../assets/layer1.svg"
 function ComponentPart(){
 
 
@@ -10,7 +10,7 @@ function ComponentPart(){
   return (
   <div >
     <div className="upperbar">
-    
+    <layer1 className="layer"/>
     <div className="field">
     
     <button className="side-button">NSE</button>
@@ -19,12 +19,12 @@ function ComponentPart(){
     </div>
     <AiFillQuestionCircle size={40}/>
 </div>
-  
+
     
     <div className='main'>
     <div className="details">
-      NIFTY
-      SENSEX
+     <input type="button" value="NIFTY50" ></input>
+     <input type = "button" value= "SENSEX"></input>
       
       </div>
       <div className="overview">

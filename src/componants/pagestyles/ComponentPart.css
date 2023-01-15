@@ -53,14 +53,23 @@ padding: 5vh;
 
   .details{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
  
-     
+     background-color: rgb(246, 255, 255);
     padding: 2vh;
 
     width: max-content;
   }
   
+  input{
+    border: none;
+    background-color: #f1f1f1;
+    font-size: medium;
+    background-color: rgb(254, 254, 254);
+    padding: 1vh;
+    margin: 0.2vh;
+  }
+
   .Score{
     margin-left: 10vh;
     width: max-content;
