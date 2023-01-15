@@ -65,8 +65,12 @@ function Routed() {
                             </div>
                         </div>
                             <div className='bottom'>
-                                <div>Login</div>
-                                <div>Sign Up</div>
+                                <div className='hover' onClick={() => {
+                                navigate("/Homepage/login")
+                            }}>Login</div>
+                                <div className='hover' onClick={() => {
+                                navigate("/Homepage/signin")
+                            }}>Sign Up</div>
                             </div>
                     </div>
                     <div className="content">
