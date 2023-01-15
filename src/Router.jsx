@@ -9,7 +9,7 @@ import {AiFillHome} from 'react-icons/ai';
 import {VscGraph} from 'react-icons/vsc';
 import {MdOutlineForum} from 'react-icons/md';
 import {TbMessages} from 'react-icons/tb';
-
+import ComponentPart from '../src/componants/ComponentPart'
 
 function Routed() {
 		return (
@@ -74,7 +74,9 @@ function Routed() {
                                 <div>Sign Up</div>
                             </div>
                     </div>
+                    <ComponentPart></ComponentPart>
                 </main>
+                
             </div>
         );
 }
