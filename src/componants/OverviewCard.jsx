@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from "react";
 import axios from "axios";
 import { useNavigate , renderMatches, useParams } from "react-router-dom";
-import "../componants/pagestyles/OverviewCard.css"
+import "../componants/css/OverviewCard.css"
 
 
 
