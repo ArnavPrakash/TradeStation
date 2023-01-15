@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Navigate exact to="/Homepage" />} />
 				<Route exact path="/Homepage" element={<Routed/>} >
-					<Route path="/Homepage/graph" element={<Areagraph/>} />
+					<Route path="/Homepage/graph" element={<Graph/>} />
 			  </Route>
         </Routes>
 			</BrowserRouter>
