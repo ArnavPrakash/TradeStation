@@ -1,5 +1,6 @@
 import { ReactComponent as ChevronRight } from './assets/chevron-right.svg';
 import './sidebar.css';
+import { Outlet, useNavigate, useLocation, useOutlet } from 'react-router-dom'
 import user from './assets/user.png'
 import {FaUserCircle,FaUsers} from 'react-icons/fa';
 import {CgUserlane} from 'react-icons/cg';
@@ -12,6 +13,9 @@ import {TbMessages} from 'react-icons/tb';
 import ComponentPart from '../src/componants/ComponentPart'
 
 function Routed() {
+    const location = useLocation();
+    const outlet = useOutlet();
+    const navigate = useNavigate();
 		return (
             <div className="App">
     
@@ -29,19 +33,16 @@ function Routed() {
                                 <div>
                                 <BiSearch/>Find anything
                                 </div>
-                                <ChevronRight className="chevron" />
                             </button>
                             <button className={window.location.pathname.startsWith("/session/usermanagement") ? 'nav-button active' : 'nav-button'} onClick={() => {
                                 // navigate("/session/usermanagement")
                             }}>
                                 <div><FaUsers/> Communities</div>
-                                <ChevronRight className="chevron" />
                             </button>
                             <button className={window.location.pathname.startsWith("/session/unitmanagement") ? 'nav-button active' : 'nav-button'} onClick={() => {
                                 // navigate("/session/unitmanagement")
                             }}>
                                 <div><FiMessageSquare/> Help and support</div>
-                                <ChevronRight className="chevron" />
                             </button>
                             </div>
                             <div className='gen'>GENERAL</div>
@@ -50,22 +51,16 @@ function Routed() {
                                 // navigate("/session/ordermanagement")
                             }} >
                                 <div><AiFillHome/> Home</div>
-                                <ChevronRight className="chevron" />
                             </button>
-                            <button className={window.location.pathname.startsWith("/session/warehousemanagement") ? 'nav-button active' : 'nav-button'} onClick={() => {
-                                // navigate("/session/warehousemanagement")
+                            <button className={window.location.pathname.startsWith("/Homepage/graph") ? 'nav-button active' : 'nav-button'} onClick={() => {
+                                navigate("/Homepage/graph")
                             }}>
                                 <div><VscGraph/> Stocks & Funds</div>
-                                <ChevronRight className="chevron" />
                             </button>
-    
-    
-    
                             <button className={window.location.pathname.startsWith("/session/issuemanagement") ? 'nav-button active' : 'nav-button'} onClick={() => {
                                 // navigate("/session/issuemanagement")
                             }}>
                                 <div><TbMessages/>Forum</div>
-                                <ChevronRight className="chevron" />
                             </button>
                             </div>
                         </div>
@@ -74,7 +69,9 @@ function Routed() {
                                 <div>Sign Up</div>
                             </div>
                     </div>
-                    <ComponentPart></ComponentPart>
+                    <div className="content">
+						<Outlet />
+					</div>
                 </main>
                 
             </div>

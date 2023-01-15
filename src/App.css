@@ -202,7 +202,7 @@ main {
 
 .nav-panel {
   display: block;
-  width: 20vw;
+  width: 23vw;
   min-width: 270px;
   background-color: #EEF1F4;
   height: 100%;
@@ -246,97 +246,9 @@ main {
   padding: 0 15px;
 }
 
-.content-area {
-  /* height: calc(100vh - max(7.8vh, 70px)); */
-  width: calc(100vw - max(270px, 20vw));
-  /* height: 100vh !important; */
-  flex: 1;
-  box-sizing: border-box;
+.content{
+    width: 77%;
 }
-
-.content-area .content-path {
-  width: 100%;
-  padding: 0 0 0 0;
-  text-align: left;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--foreground-secondary);
-  box-sizing: border-box;
-  padding-bottom: 25px;
-}
-
-.content-area .content-path>* {
-  margin-right: 5px;
-}
-
-.content-area .content-path>svg {
-  height: 30px;
-  max-width: 30px;
-}
-
-.content-area .content {
-  height: 100%;
-  max-height: 91vh;
-  overflow: auto;
-  padding: 25px;
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.myWrapper {
-  position: relative;
-  background-color: var(--background-secondary) !important;
-  border-radius: 15px;
-  /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6); */
-  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5) !important;
-  padding: 25px;
-  max-height: 100%;
-  overflow: hidden;
-  color: var(--foreground-primary) !important;
-}
-
-.dataTables_info {
-  margin-top: 15px;
-}
-
-.paginate_button {
-  /* border-radius: var(--border-radius) !important; */
-  border-radius: 0 !important;
-  color: var(--foreground-secondary) !important;
-  border: none !important;
-  outline: none !important;
-  padding: 0.25em 0.5em !important;
-  margin-top: 15px;
-}
-
-.paginate_button.current {
-  color: var(--foreground-primary) !important;
-  border-bottom: 2px solid var(--foreground-primary) !important;
-}
-
-.three-column-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.SampleText{
-  color:var(--foreground-primary) !important;
-}
-.myWrapperDetail{
-  position: relative;
-  background-color: var(--background-secondary) !important;
-  border-radius: 15px;
-  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5) !important;
-  padding-top: 4%;
-  padding-left: 4%;
-  max-height: 100%;
-  overflow: scroll;
-  color: var(--foreground-primary) !important;
-}
-/* Code by Rohit end*/
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   .nav-panel{

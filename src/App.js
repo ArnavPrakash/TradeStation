@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Graph from './componants/graph.jsx';
 import Routed from './Router';
 import { useEffect, useState } from 'react';
+import Areagraph from './componants/Areagraph';
 
 function App() {
   const [sessionState, setSessionState] = useState({
@@ -16,9 +17,9 @@ function App() {
 		<>
 			<BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Navigate exact to="/login" />} />
-				<Route exact path="/login" element={<Routed/>} >
-					<Route path="login/graph" element={<Graph/>} />{" "}
+        <Route exact path="/" element={<Navigate exact to="/Homepage" />} />
+				<Route exact path="/Homepage" element={<Routed/>} >
+					<Route path="/Homepage/graph" element={<Areagraph/>} />
 			  </Route>
         </Routes>
 			</BrowserRouter>

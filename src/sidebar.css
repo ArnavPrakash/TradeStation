@@ -51,7 +51,7 @@
 button.nav-button {
 	font-size: 1.5em;
 	height: 7vh;
-	width: 95%;
+	width: 75%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -59,9 +59,9 @@ button.nav-button {
 	background: none;
 	border: none;
 	transition: all linear 0.1s;
-	border-radius: 10px !important;
+	border-radius: 0px !important;
 	color: #6F7688;
-	fill: var(--foreground-primary) !important;
+	fill: #6F7688;
 	font-family: 'Poppins' !important;
 	font-weight: 400 !important;
 }
@@ -73,35 +73,17 @@ button.nav-button svg {
 	margin-right: 10px;
 	padding: 2.5px;
 }
-button.nav-button svg  > * {
-	fill: var(--foreground-primary) ;	
-}
 
 button.nav-button:hover {
-	background: #84587C !important;
-	color: white!important;
+	background: white!important;
+	color: black!important;
 }
 
 button.nav-button.active {
-	background: #84587C !important;
-	fill: white !important;
-	color: white !important;
-}
-
-button.nav-button:hover svg > * {
-	fill: white !important;
-}
-
-button.nav-button.active svg > * {
-	fill: white!important;
-}
-
-button.nav-button.active .chevron{
-	display: block;
-}
-
-button.nav-button .chevron *{
-	fill: var(--background-secondary)  !important;
+	background: white !important;
+	fill: black !important;
+	color: black !important;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 button.nav-button div{
@@ -111,13 +93,6 @@ button.nav-button div{
 	justify-content: flex-start;
 }
 
-button.nav-button .chevron {
-	height: 20px;
-	max-width: 20px;
-	display: none;
-	margin-right: 0px !important;
-}
-
 .horz_line{
 	height: 1px;
 	width: 184px;
@@ -125,23 +100,7 @@ button.nav-button .chevron {
 	margin: 15px 0;
 	margin-left: -50px;
 }
-.myToggle{
-	display: flex;
-	align-items: center;
-	margin-left: -25%;
-	margin-top: 20px;
-}
-.myToggle span{
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 500;
-	line-height: 31px;
-	/* identical to box height, or 129% */
-	font-size: 20px;
-	text-transform: capitalize;
-	margin-right: 15px;
-	color: var(--foreground-primary);
-}
+
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
     .nav-button{
