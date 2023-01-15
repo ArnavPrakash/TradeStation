@@ -1,7 +1,7 @@
 import React from "react";
 import OverviewCard from "./OverviewCard";
 import "./pagestyles/ComponentPart.css";
-
+import {AiFillQuestionCircle} from 'react-icons/ai';
 
 function ComponentPart(){
 
@@ -9,14 +9,18 @@ function ComponentPart(){
 
   return (
   <div >
-
-  <div className="field">
+    <div className="upperbar">
+    
+    <div className="field">
     
     <button className="side-button">NSE</button>
     <button className="side-button">BSE</button>
 
     </div>
-
+    <AiFillQuestionCircle size={40}/>
+</div>
+  
+    
     <div className='main'>
     <div className="details">
       NIFTY

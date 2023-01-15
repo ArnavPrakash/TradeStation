@@ -12,10 +12,10 @@ padding: 5vh;
   .field{
     
     background-color: rgba(209, 224, 209, 0.705);
-    float: right;  
+    
     padding: 1vh;
     width: 25vh;
-    margin-right: 5vh;
+   margin: 2vh;
     margin-top: 2vh;
   }
   
@@ -92,4 +92,13 @@ padding: 5vh;
   .overview{
   display: flex;
   flex-direction: row;
+}
+
+.upperbar{
+align-items: center;
+float: right;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+  margin: auto;
 }
