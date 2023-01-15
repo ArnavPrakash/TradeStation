@@ -105,9 +105,16 @@ padding: 5vh;
 
 .upperbar{
 align-items: center;
-float: right;
+
   display: flex;
   flex-direction: row;
   margin-top: 2vh;
   margin: auto;
+}
+
+.logo{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vh;
 }

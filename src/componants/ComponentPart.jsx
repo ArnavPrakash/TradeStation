@@ -1,16 +1,19 @@
 import React from "react";
 import OverviewCard from "./OverviewCard";
-import "./pagestyles/ComponentPart.css";
+import "./css/ComponentPart.css";
 import {AiFillQuestionCircle} from 'react-icons/ai';
-import  {ReactComponent as layer1} from "../assets/layer1.svg"
+import  {ReactComponent as Logo} from "../assets/Logo.svg"
 function ComponentPart(){
 
 
 
   return (
   <div >
+    
     <div className="upperbar">
-    <layer1 className="layer"/>
+    <div className="logo">
+    <Logo />
+    </div>
     <div className="field">
     
     <button className="side-button">NSE</button>
@@ -35,8 +38,8 @@ function ComponentPart(){
        </div>
        <hr></hr>
        </div>
+      
        <OverviewCard></OverviewCard>
-       
        </div>
      
         </div>

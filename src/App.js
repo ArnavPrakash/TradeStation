@@ -4,6 +4,8 @@ import Graph from './componants/graph.jsx';
 import Routed from './Router';
 import { useEffect, useState } from 'react';
 import Areagraph from './componants/Areagraph';
+import ComponentPart from './componants/ComponentPart';
+import Home from './componants/home';
 
 function App() {
   const [sessionState, setSessionState] = useState({
@@ -19,7 +21,9 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Navigate exact to="/Homepage" />} />
 				<Route exact path="/Homepage" element={<Routed/>} >
+				<Route path="/Homepage/home" element={<Home/>} />
 					<Route path="/Homepage/graph" element={<Graph/>} />
+					<Route path="/Homepage/StocksFunds" element={<ComponentPart/>} />
 			  </Route>
         </Routes>
 			</BrowserRouter>
