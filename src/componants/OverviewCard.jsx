@@ -6,6 +6,9 @@ import "../componants/css/OverviewCard.css"
 
 
 function OverviewCard ({Stock}) {
+
+const data = {Stock};
+
   // const [data, setData] = useState({});
 
   // const stock = {Stock};
@@ -22,7 +25,7 @@ function OverviewCard ({Stock}) {
   //        setData(rs.data) 
   //     });
   //     console.log(data)
-  //{data.open} {data.PrevClose} {data.DayHigh} {data.DayLow}{data.YearHigh} 
+  //  } 
   // }, []);
 
   return(
@@ -30,13 +33,13 @@ function OverviewCard ({Stock}) {
       <table>
 
       
-      <tr><td>Open :</td> <td>17,632</td></tr>
-      <tr><td>Previous Close : </td><td>17,632</td></tr>
-      <tr><td>Day High:</td><td>17,632</td> </tr>
+      <tr><td>Open :</td> <td>{data.Stock.Open}</td></tr>
+      <tr><td>Previous Close : </td><td>{data.Stock.Close}</td></tr>
+      <tr><td>Day High:</td><td>{data.Stock.High}</td> </tr>
       
-      <tr><td>DayLow :</td><td> 17,632</td></tr>
-      <tr><td>52WeekHigh :</td><td>17,632 </td></tr>
-      <tr><td>52WeekLow : </td><td>17,632</td></tr>
+      <tr><td>DayLow :</td><td> {data.Stock.Low}</td></tr>
+      {/* <tr><td>52WeekHigh :</td><td>{data}  </td></tr>
+      <tr><td>52WeekLow : </td><td>17,632</td></tr> */}
      
       </table>
       

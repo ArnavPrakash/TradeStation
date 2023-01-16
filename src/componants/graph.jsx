@@ -4,7 +4,7 @@ import Chart from 'react-apexcharts'
 import * as ReactDOM from "react-dom";
 import './css/graph.css'
 import { useState, useEffect } from "react";
-import { getElement } from '@syncfusion/ej2-react-charts';
+// import { getElement } from '@syncfusion/ej2-react-charts';
 
 
 function Graph() {
