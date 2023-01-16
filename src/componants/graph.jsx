@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+
 import React, { Component } from 'react';
 import Chart from 'react-apexcharts'
 import * as ReactDOM from "react-dom";
