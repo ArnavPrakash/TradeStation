@@ -10,13 +10,6 @@ import Signin from './componants/signIn';
 
 
 function App() {
-  const [sessionState, setSessionState] = useState({
-		userID: null,
-		userEmail: null,
-		active: null,
-		userName: null,
-		userImage: null
-	})
   return (
 		<>
 			<BrowserRouter>

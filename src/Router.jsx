@@ -27,20 +27,20 @@ function Routed() {
                                 <div style={{'scale':'3'}}><FaUserCircle/></div>
                             </div>
                             <div className='buttons'>
-                            <button className={window.location.pathname.startsWith("/session/home") ? 'nav-button active' : 'nav-button'} onClick={() => {
-                                // navigate("/session/home")
+                            <button className='nav-button' onClick={() => {
+                              
                             }}>
                                 <div>
                                 <BiSearch/>Find anything
                                 </div>
                             </button>
-                            <button className={window.location.pathname.startsWith("/session/usermanagement") ? 'nav-button active' : 'nav-button'} onClick={() => {
-                                // navigate("/session/usermanagement")
+                            <button className= 'nav-button' onClick={() => {
+                         
                             }}>
                                 <div><FaUsers/> Communities</div>
                             </button>
-                            <button className={window.location.pathname.startsWith("/session/unitmanagement") ? 'nav-button active' : 'nav-button'} onClick={() => {
-                                // navigate("/session/unitmanagement")
+                            <button className= 'nav-button' onClick={() => {
+                                
                             }}>
                                 <div><FiMessageSquare/> Help and support</div>
                             </button>
