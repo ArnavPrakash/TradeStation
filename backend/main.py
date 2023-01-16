@@ -109,6 +109,21 @@ async def fetchStockData(data:StockDetails, response:Response):
             stock_data_list["Adj Close"].append(i["Adj Close"])
             stock_data_list["Volume"].append(i["Volume"])
         return {"data" : stock_data_list}
+    elif data.returntype == "graph":
+        stocks=[]
+        for i in range(100):
+            stock_list = {
+                'x':[],
+                'y':[]
+            }
+            stock_list['x'].append(stock_data[i]['Date'])
+            stock_list["y"].append(stock_data[i]["Open"])
+            stock_list["y"].append(stock_data[i]["Close"])
+            stock_list["y"].append(stock_data[i]["High"])
+            stock_list["y"].append(stock_data[i]["Low"])
+            stocks.append(stock_list)
+        return {'data': stocks}
+
 
 @app.get("/")
 async def index():

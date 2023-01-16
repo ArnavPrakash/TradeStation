@@ -1,5 +1,4 @@
 import React from "react";
-import OverviewCard from "./OverviewCard";
 import "./css/home.css";
 import  {ReactComponent as Logo} from "../assets/Logo.svg"
 

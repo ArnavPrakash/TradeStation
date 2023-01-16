@@ -14,8 +14,14 @@
 }
 .company{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     width: 80%;
+    height: 40px;
+}
+.company select{
+    background: #EFECFF;
+    color: #7462F7;
+    font-size: larger;
 }
 .timefilter{
     display: flex;
