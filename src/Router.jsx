@@ -47,7 +47,7 @@ function Routed() {
                             </div>
                             <div className='gen'>GENERAL</div>
                             <div className='buttons'>
-                            <button className={window.location.pathname.startsWith("/session/ordermanagement") ? 'nav-button active' : 'nav-button'} onClick={() => {
+                            <button className={window.location.pathname.startsWith("/Homepage/home") ? 'nav-button active' : 'nav-button'} onClick={() => {
                                 navigate("/Homepage/home")
                             }} >
                                 <div><AiFillHome/> Home</div>
@@ -58,7 +58,7 @@ function Routed() {
                                 <div><VscGraph/>Stocks & Funds</div>
                             </button>
                             <button className={window.location.pathname.startsWith("/Homepage/graph") ? 'nav-button active' : 'nav-button'} onClick={() => {
-                                navigate("/Homepage/StocksFunds")
+                                navigate("/Homepage/graph")
                             }}>
                                 <div><VscGraph/>Advanced Chart</div>
                             </button>
