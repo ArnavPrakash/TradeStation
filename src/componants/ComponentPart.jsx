@@ -21,14 +21,14 @@ function ComponentPart(){
           },
           body:JSON.stringify({
             "stock": Comp,
-            "returntype": "graph"
+            "returntype": "dict"
           }),
         }
       );
       const data = await response.json();
 
 
-      console.log(data.data[0].y[0]);
+      console.log(data.data[0]);
 
       if(response.status === 200){
         setdata(data["data"])
@@ -71,14 +71,14 @@ function ComponentPart(){
       </div>
       <div className="overview">
         <div className="net" >
-      <div className="Score"><h1>{data.data[0].y[0]}<sup>INR</sup></h1>
-       +113.95(0.64%) 
+      <div className="Score"><h1>{data[1253].Volume}<sup>INR</sup></h1>
+      +113.02
        
        </div>
        <hr></hr>
        </div>
       
-       <OverviewCard stocks = {datadata.data[0].y} ></OverviewCard>
+       <OverviewCard Stock = {data[1253]} ></OverviewCard>
        </div>
      
         </div>
